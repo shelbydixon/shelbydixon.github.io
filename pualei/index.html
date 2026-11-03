@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PUALEI | Plant water stress at UH Mānoa</title>
+  <meta name="description" content="Inside the UH Mānoa grow tent, the PUALEI team is testing how water reaches each tray before planting a crop for its space agriculture experiment.">
+  <meta name="theme-color" content="#193c32">
+  <link rel="canonical" href="https://shelbydixon.github.io/pualei/">
+  <meta property="og:title" content="PUALEI | Can a camera tell when a plant needs water?">
+  <meta property="og:description" content="A look inside the UH Mānoa grow tent, with photos and measurements from the first wick test.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shelbydixon.github.io/pualei/">
+  <meta property="og:image" content="https://shelbydixon.github.io/pualei/assets/wick-trial.jpg">
+  <meta property="og:image:alt" content="White wicks run from a shared reservoir to hemp mats in the grow tent.">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body id="top">
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header">
+    <nav class="wrap navigation" aria-label="Primary navigation">
+      <a class="wordmark" href="#top">PUALEI<span>UH MĀNOA</span></a>
+      <div class="nav-links">
+        <a href="#research">Research</a><a href="#ground">Wick test</a><a href="#concept">Chamber</a><a href="#team">Team</a><a class="nav-download" href="#overview">Slides <span aria-hidden="true">↓</span></a>
+      </div>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow">Space agriculture at UH Mānoa</p>
+        <h1 id="hero-title">Can a camera tell when a plant <em>needs water?</em></h1>
+        <p class="lede">We’re building a plant experiment for the International Space Station. For now, we’re working in a grow tent in Hawaiʻi. Before we plant anything, we need to know whether water can reach every tray.</p>
+        <div class="actions"><a class="button" href="#ground">See the wick test</a><a class="quiet-link" href="#team">Meet the team</a></div>
+        <p class="support">University of Hawaiʻi at Mānoa<br>Supported through NASA EPSCoR ISS</p>
+      </div>
+      <figure class="hero-figure">
+        <a href="assets/wick-trial.jpg" aria-label="Open the full wick test photo"><img src="assets/wick-trial.jpg" alt="Hemp mats in blue trays surround a black reservoir. White wicks lead from the lid to the mats." width="1080" height="1440" fetchpriority="high"></a>
+        <figcaption><span class="fig-id">October 28, 2026</span>Inside the grow tent. Each white wick connects a tray to the same tub of distilled water.</figcaption>
+      </figure>
+    </section>
+    <section class="section wrap research" id="research" aria-labelledby="research-title">
+      <div><p class="eyebrow">The experiment</p><h2 id="research-title">What happens before a leaf wilts?</h2></div>
+      <div class="research-copy">
+        <p>A leaf can still look green as it begins to run short of water. When its pores close, less water evaporates from its surface. The leaf can warm up. We want to see whether a thermal camera can pick up that change while the plant still looks healthy in a regular photo.</p>
+        <p>In the ground trials, we plan to vary the water supply and record which wavelengths of light the leaves reflect. We’ll check the model’s predictions against water content measured by weight. A handheld meter will give us a chlorophyll reading just after imaging.</p>
+        <aside class="proposal-note" aria-label="Excerpt from the PUALEI proposal">
+          <p>The proposal asks whether a thermal signal can appear <q>before visual symptoms or changes in standard vegetation indices become measurable</q>.</p>
+          <p class="proposal-credit">PUALEI technical plan, §4, hypothesis H2, p. 9</p>
+        </aside>
+      </div>
+    </section>
+    <section class="ground-section" id="ground" aria-labelledby="ground-title">
+      <div class="wrap ground-grid">
+        <figure class="ground-photo">
+          <a href="assets/tray-6.jpg" aria-label="Open the full Tray 6 photo"><img src="assets/tray-6.jpg" alt="Tray 6 in the foreground, with a white wick resting against the hemp mat." width="1080" height="1440" loading="lazy"></a>
+          <figcaption><span class="fig-id">Tray 6</span>Most of this mat felt wet. The corner nearest the reservoir was still dry when we checked it.</figcaption>
+        </figure>
+        <div>
+          <p class="eyebrow">Grow tent / October 27 and 28, 2026</p>
+          <h2 id="ground-title">The wicks got wet. Most trays barely changed in weight.</h2>
+          <p>We put dry wicks into a shared reservoir and ran one to each of 22 hemp mats. We left the trays unplanted so we could see where the water went.</p>
+          <p>After nearly 23 hours, we weighed each tray with its mat. <strong>Tray 6 gained 12.82 g.</strong> Seventeen of the 22 tray and mat pairs finished within 0.10 g of their starting weight. A wet wick alone told us very little about the mat at the other end.</p>
+          <details><summary>What we’ll change in the next test <span aria-hidden="true">+</span></summary><div class="detail-copy"><p>We’ll wet the mats and wicks before we start. We’ll keep the reservoir at a set height and record where each wick touches its mat. Weighing the wicks separately will tell us how much water they hold when we take the setup apart.</p></div></details>
+        </div>
+      </div>
+    </section>
+    <section class="section wrap notebook" aria-labelledby="sensor-title">
+      <div><p class="eyebrow">Inside the tent</p><h2 id="sensor-title">What the Pi recorded</h2>
+        <p>A Raspberry Pi 5 took a reading every minute. It logged air temperature and humidity alongside CO₂ and light. The file contains 1,489 consecutive readings over 24 hours and 48 minutes.</p>
+        <p>Air temperature at the sensor ranged from 25.59 to 32.77 °C. The light readings showed when the tent got brighter or darker. We still need to check those changes against the lamp timer.</p>
+      </div>
+      <figure class="sensor-photo">
+        <a href="assets/pi-bench.jpg" aria-label="Open the Pi bench photo"><img src="assets/pi-bench.jpg" alt="A Raspberry Pi wired to sensor boards on a white breadboard during an early bench test." width="975" height="1300" loading="lazy"></a>
+        <figcaption><span class="fig-id">September 2026</span>The Pi and sensor boards on the bench before we moved the logger into the tent.</figcaption>
+      </figure>
+    </section>
+    <section class="concept-section" id="concept" aria-labelledby="concept-title">
+      <div class="wrap">
+        <div class="chamber-intro"><div><p class="eyebrow">Payload design</p><h2 id="concept-title">Fitting a camera beside the plants</h2></div>
+          <p>The proposed chamber is about 10 cm wide and 34 cm long. Four growing trays sit along one wall in the current layout. We’re checking how much room the leaves will have and whether a camera can see them as they grow.</p></div>
+        <div class="chamber-photos">
+          <figure><a href="assets/enclosure-mockup.jpg" aria-label="Open the printed enclosure photo"><img src="assets/enclosure-mockup.jpg" alt="A white printed frame holds yellow trays on the workbench." width="1600" height="1200" loading="lazy"></a><figcaption><span class="fig-id">Printed mockup</span>We use the frame and removable trays to check the fit by hand.</figcaption></figure>
+          <figure><a href="assets/preliminary-cad.jpg" aria-label="Open the preliminary CAD drawing"><img src="assets/preliminary-cad.jpg" alt="Side view of the preliminary chamber layout, with space for four growing trays along one wall." width="1600" height="934" loading="lazy"></a><figcaption><span class="fig-id">CAD section</span>The camera and reservoir are placeholders. Their final sizes depend on what fits and what the camera can see.</figcaption></figure>
+        </div>
+        <div class="flight-question">
+          <div><p class="eyebrow">The ISS experiment</p><h3>Would the same warm leaf mean the same thing in orbit?</h3>
+            <p>A model trained in our grow tent might learn that a warmer leaf is short of water. On the ISS, water moves differently around the roots. We want to find out whether the model would still read the leaf correctly.</p>
+            <p>The flight plan calls for running the model on board and saving the images with the conditions in the chamber. Researchers could then go back to a particular reading and check what the plant looked like when the model flagged it.</p>
+          </div>
+          <figure class="proposal-quote">
+            <blockquote>“Determine the reliability of Earth-trained machine learning classifiers when applied in space”</blockquote>
+            <figcaption>PUALEI technical plan, §4, objective 2, p. 9</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+    <section class="section wrap team-section" id="team" aria-labelledby="team-title">
+      <div class="team-intro"><p class="eyebrow">University of Hawaiʻi at Mānoa</p><h2 id="team-title">Meet the team</h2></div>
+      <dl class="roster">
+        <div><dt>Dr. Daniel Drew</dt><dd>Teaches electrical and computer engineering and studies small robots.</dd></div>
+        <div><dt>Dr. Kent Kobayashi</dt><dd>Studies how to grow crops in controlled environments, including hydroponic systems for space research.</dd></div>
+        <div><dt>Kristen Chang</dt><dd>Mechanical engineering student.</dd></div>
+        <div><dt>Landen Ildefonso</dt><dd>Electrical engineering student.</dd></div>
+        <div><dt>Shelby Dixon</dt><dd>Computer engineering student.</dd></div>
+        <div><dt>Jason Yee</dt><dd>Mechanical engineering student.</dd></div>
+        <div><dt>Dr. Xing Wei</dt><dd>Uses images of plants to study signs of disease.</dd></div>
+      </dl>
+    </section>
+    <section class="overview-section" id="overview" aria-labelledby="overview-title"><div class="wrap slides-row">
+      <div><p class="eyebrow">Project slides</p><h2 id="overview-title">A five-slide overview of PUALEI</h2></div>
+      <a class="button" href="assets/PUALEI_Project_Overview.pptx" download="PUALEI_Project_Overview.pptx">Download PowerPoint <span class="file-type">PPTX</span></a>
+    </div></section>
+  </main>
+  <footer class="footer"><div class="wrap footer-top"><a class="wordmark" href="#top">PUALEI</a><p>Precision Unmanned Agroscience<br>Leveraging Edge Intelligence</p><a href="#top">Back to top</a></div>
+    <div class="wrap footer-bottom"><p>University of Hawaiʻi at Mānoa · NASA EPSCoR ISS</p><span>Updated <time datetime="2026-11-02">November 2, 2026</time></span></div>
+  </footer>
+</body>
+</html>
