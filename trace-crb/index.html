@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#101318">
-  <title>TRACE-CRB — Shelby Dixon</title>
-  <meta name="description" content="An early research project exploring whether tiny vibrations could help inspection crews narrow the search for coconut rhinoceros beetle larvae in Hawaiʻi.">
+  <title>TRACE-CRB | Shelby Dixon</title>
+  <meta name="description" content="Shelby Dixon’s research notebook: building a contact recorder and exploring a future bug sound library to help growers recognize hidden pest activity.">
   <link rel="canonical" href="https://shelbydixon.github.io/trace-crb/">
-  <meta property="og:title" content="TRACE-CRB — After the alert, there’s still a search.">
-  <meta property="og:description" content="An early research prototype exploring vibration sensing for coconut rhinoceros beetle inspections. Meet the project and help shape its first supervised test.">
+  <meta property="og:title" content="TRACE-CRB | Listening for hidden pests">
+  <meta property="og:description" content="An early recorder, the first supervised test, and a longer-term idea for helping farmers and backyard growers. Research in progress in Hawaiʻi.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://shelbydixon.github.io/trace-crb/">
   <meta property="og:image" content="https://shelbydixon.github.io/trace-crb/assets/dog-and-mulch.webp">
@@ -18,46 +18,125 @@
 <body>
   <a class="skip-link" href="#project">Skip to the project</a>
   <header class="masthead wrap">
-    <a class="wordmark" href="#" aria-label="TRACE-CRB home">TRACE<span>—</span>CRB</a>
-    <nav aria-label="Main navigation"><a href="#next">The next test</a><a href="#contact">Get in touch</a></nav>
+    <a class="wordmark" href="#" aria-label="TRACE-CRB home">TRACE<span>-</span>CRB</a>
+    <nav aria-label="Main navigation"><a href="#project">The work</a><a href="#vision">The idea ahead</a><a href="#contact">Contact</a></nav>
   </header>
   <main>
     <section class="hero wrap" aria-labelledby="headline">
       <div class="hero-copy">
-        <p class="eyebrow">Shelby Dixon · Hawaiʻi</p>
+        <p class="byline">A research project by Shelby Dixon <span>Hawaiʻi</span></p>
         <h1 id="headline">After the alert,<br>there’s still<br>a search.</h1>
-        <p class="intro">Could tiny vibrations help a crew find what’s hidden in a pile of mulch?</p>
-        <a class="text-link" href="#project">Meet TRACE-CRB <span aria-hidden="true">↓</span></a>
+        <p class="expansion"><strong>TRACE</strong><br>Targeted Recognition of<br>Acoustic Contact Evidence</p>
+        <p class="intro">I’m building a recorder to explore whether tiny vibrations can help us find the coconut rhinoceros beetle larvae hidden in mulch.</p>
+        <a class="text-link" href="#project">The story so far <span aria-hidden="true">↓</span></a>
       </div>
       <figure class="hero-image">
         <img src="assets/dog-and-mulch.webp" width="1200" height="675" alt="Illustration of a detection dog beside a pile of mulch." fetchpriority="high">
-        <figcaption>Illustration of the inspection challenge.</figcaption>
+        <figcaption>An illustration of the question behind this project: after a dog alerts, where do you look?</figcaption>
       </figure>
     </section>
-    <div class="status-strip"><p class="wrap"><strong>Early research prototype.</strong> Detection of beetle larvae has not yet been demonstrated.</p></div>
+    <div class="status-strip"><p class="wrap"><strong>Where I am now</strong> Early research prototype. Detection of beetle larvae has not yet been demonstrated.</p></div>
+
     <section class="paper" id="project">
-      <div class="wrap section-grid">
-        <div><p class="eyebrow">The question</p><h2>Less searching.<br>Better evidence.</h2></div>
-        <div class="prose">
-          <p>A tree takes years to become part of a place. This project starts with one small part of protecting palms: finding the beetle larvae hidden in the material around them.</p>
-          <p>A dog can alert an inspection crew to a suspect pile. Locating the coconut rhinoceros beetle larvae inside can still take digging.</p>
-          <p>I’m exploring whether a small contact sensor could help crews narrow that search. Think of a stethoscope for vibrations: the sensor touches a surface and records movement traveling through it. It does not yet tell us whether a larva is there.</p>
-          <p>The intended users are people inspecting mulch and green waste. The aim is to give them useful information about where to look next.</p>
+      <div class="wrap">
+        <div class="place-story">
+          <div class="essay-copy">
+            <p class="margin-note">From Hawaiʻi <span>Niu and the places we grow</span></p>
+            <h2>What’s at stake when a palm is lost</h2>
+            <p class="standfirst">A tree takes years to become part of a place.</p>
+            <p>Niu, the coconut, is part of Hawaiʻi’s food and cultural life. The community movement <a href="https://www.puuhonua-society.org/niu-now">NiU NOW!</a> describes it as a “tree of life” and works to renew coconut groves, cultural knowledge, and food security. Protecting palms means more than preserving scenery.</p>
+          </div>
+          <figure class="palm-photo">
+            <img src="assets/crb-damage-hawaii.webp" width="1013" height="1800" alt="A coconut palm in Hawaiʻi with severely damaged fronds." loading="lazy">
+            <figcaption>Coconut palm in Hawaiʻi with severe CRB damage, June 2015.<br>Photo: <a href="https://www.flickr.com/photos/scotnelson/19875950389/">Kailee Tam, via Scot Nelson</a>. <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</figcaption>
+          </figure>
+        </div>
+        <div class="larva-story">
+          <figure class="larva-photo">
+            <img src="assets/crb-larvae-hdoa.webp" width="1600" height="1200" alt="Late-stage coconut rhinoceros beetle larvae laid out in a specimen display." loading="lazy">
+            <figcaption>Late-stage CRB larvae on display at HDOA in Honolulu, September 2017. This is a specimen display, not a TRACE test.<br>Photo: <a href="https://www.flickr.com/photos/starr-environmental/39499675840/">Forest &amp; Kim Starr</a>. <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.</figcaption>
+          </figure>
+          <div class="essay-copy">
+            <h3>The part you can’t see</h3>
+            <p>Adult beetles damage a palm’s growing crown. Their larvae feed in decaying plant material, including green-waste piles. <a class="inline-source" href="https://www.fs.usda.gov/foresthealth/docs/fidls/FIDL-191-CoconutRhinocerosBeetle.pdf#page=2">USDA Forest Service</a></p>
+            <p>A detection dog can alert a crew to a suspect pile. Finding the coconut rhinoceros beetle larvae inside can still take digging. I’m starting with a specific question: could a contact recorder help a crew narrow that search?</p>
+            <p>That means learning what the recorder picks up when larvae are present, and what it picks up when they aren’t.</p>
+          </div>
         </div>
       </div>
-      <div class="wrap progress">
-        <p class="eyebrow">Where the work stands</p>
-        <div class="progress-row"><span class="number">01</span><h3>A recorder is built.</h3><p>I’ve built an early contact recorder and software for viewing and saving its recordings. Bench tests have shown a response to taps and vibration.</p></div>
-        <div class="progress-row"><span class="number">02</span><h3>A vibration is only a clue.</h3><p>A vibration on a screen is not proof of a beetle. Background movement and handling can appear in the recording too. The recordings need careful comparison.</p></div>
-        <div class="progress-row" id="next"><span class="number">03</span><h3>The first larval test comes next.</h3><p>The next goal is supervised recordings of comparable material with and without confirmed larvae, under similar conditions. That is the first test of whether this approach can distinguish something useful.</p></div>
+    </section>
+
+    <section class="bench wrap" aria-labelledby="bench-heading">
+      <header class="section-heading"><p class="margin-note">On the bench</p><h2 id="bench-heading">The recorder I’ve been working on</h2></header>
+      <div class="bench-photos">
+        <figure class="experiment-photo">
+          <img src="assets/trace-bench.webp" width="1152" height="1536" alt="Shelby working with the early recorder’s wiring at a laboratory bench." loading="lazy">
+          <figcaption>Working on the early contact-sensor setup, summer 2026. This was prototype development, not a test with larvae.</figcaption>
+        </figure>
+        <figure class="experiment-photo">
+          <img src="assets/trace-bench-close.webp" width="1260" height="1680" alt="Close view of the contact sensor, its wired circuit, and audio connection." loading="lazy">
+          <figcaption>The contact sensor, wired circuit, and audio connection during prototype development. Project photographs supplied by Shelby.</figcaption>
+        </figure>
+      </div>
+      <div class="bench-notes">
+        <div class="essay-copy">
+          <p>TRACE-CRB grew out of my farming experience and a summer 2026 engineering project at Oceanit. I began building a contact sensor and software to explore a practical question: could vibration help crews decide where to inspect first?</p>
+          <p>I’ve built an early contact recorder and software for viewing and saving its recordings.</p>
+          <p>Think of a stethoscope for vibrations. The sensor touches a surface and picks up tiny movements traveling through it. It records what happens; it doesn’t yet tell me whether a larva is there.</p>
+        </div>
+        <aside class="evidence-note">
+          <h3>What the tests show so far</h3>
+          <p>My bench tests showed a response to taps and vibration. A mark on the screen is evidence of movement, not proof of a beetle. Handling and background activity can appear in the recording too.</p>
+        </aside>
       </div>
     </section>
-    <section class="next-section wrap section-grid" id="funding">
-      <div><p class="eyebrow">Help move it forward</p><h2>A small project.<br>A specific next step.</h2></div>
-      <div class="prose">
-        <p class="funding-goal">Initial research goal: <strong>$5,000</strong></p>
-        <p>This estimated budget covers paid development time, improvements to the recorder, and the first supervised comparisons. Funding has not yet been secured.</p>
-        <p>The goal is a checked recorder, supervised comparison recordings, and a short report of what the tests show.</p>
+
+    <section class="first-test paper" id="next">
+      <div class="wrap essay-lead">
+        <p class="margin-note">The next experiment</p>
+        <div class="essay-copy">
+          <h2>Record the same kind of material, with and without confirmed larvae.</h2>
+          <p>I want to make those recordings under supervision and in similar conditions. Then I can compare them and find out whether there is something useful to follow up.</p>
+          <p>The first job is careful recording. A disappointing result is still useful if it tells me what needs to change.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="vision wrap" id="vision" aria-labelledby="vision-heading">
+      <p class="margin-note">Where I want this to go <span>Future research</span></p>
+      <h2 id="vision-heading">A bug sound library.<br>Eventually, a useful alert<br>on a grower’s phone.</h2>
+      <div class="vision-intro essay-copy">
+        <p>The long-term goal is to help farmers and backyard growers recognize hidden pest activity earlier. TRACE would build a library of recordings from confirmed insects, then use machine learning to recognize patterns associated with different pests.</p>
+        <p>Eventually, a sensor connected to a phone app could alert growers to suspicious activity and suggest which pest may be responsible.</p>
+      </div>
+      <div class="research-route">
+        <article>
+          <h3>First, know what made the recording.</h3>
+          <p>Start with confirmed coconut rhinoceros beetles and background samples. Later, add confirmed palm weevil and termite species, each with its own recordings and tests. Label the insect, material, and conditions so the examples mean something.</p>
+        </article>
+        <article>
+          <h3>Then, teach software what to listen for.</h3>
+          <p>Use that library to train machine-learning software, then test it on recordings it hasn’t seen. It would need to distinguish pest activity from other movement and show how often it gets things wrong.</p>
+        </article>
+        <article>
+          <h3>Only then, work toward phone alerts.</h3>
+          <p>A future app could turn those findings into an alert and a possible pest identification. That would need testing in the conditions growers actually face before anyone could rely on it.</p>
+        </article>
+      </div>
+      <p class="vision-status">A verified library covering these pests, a tested pest-identification model, and phone alerts are future goals. TRACE has not demonstrated those capabilities. The $5,000 first phase covers the initial recorder work and supervised comparison, not the complete app.</p>
+      <p class="source-note">There is a history of research to build on. Richard Mankin’s <a href="https://www.ars.usda.gov/southeast-area/gainesville-fl/cmave/insect-behavior-and-biocontrol-research/people/richard-mankin/sound-library/">USDA ARS Bug Bytes library</a> includes insect and background recordings, including weevils and termites. It is a research reference for this project; those recordings are not presented as my own.</p>
+    </section>
+
+    <section class="funding paper" id="funding">
+      <div class="wrap funding-layout">
+        <div class="funding-intro">
+          <p class="margin-note">The first phase</p>
+          <h2>What $5,000<br>would help me do</h2>
+          <p>This estimated budget covers paid development time, improvements to the recorder, and the first supervised comparisons. Funding has not yet been secured.</p>
+          <p>The goal is a checked recorder, supervised comparison recordings, and a short report of what the tests show.</p>
+          <a class="support-link" href="mailto:sdixon4@hawaii.edu?subject=TRACE-CRB%20research%20support">Discuss research support</a>
+        </div>
+        <div class="funding-detail">
         <table class="budget">
           <caption>Preliminary first-phase budget</caption>
           <thead><tr><th scope="col">Use</th><th scope="col">Estimate</th></tr></thead>
@@ -70,22 +149,13 @@
           <tfoot><tr><th scope="row">Total</th><td>$5,000</td></tr></tfoot>
         </table>
         <p class="budget-note">Planning estimate, not secured funding. Development time assumes 80 hours at $45 per hour. Access to test material and any facility fees remain unconfirmed; the scope may change as those details are settled.</p>
-        <a class="support-link" href="mailto:sdixon4@hawaii.edu?subject=TRACE-CRB%20research%20support">Discuss research support</a>
-        <ul class="asks">
-          <li><strong>Research funding</strong><span>Help fund the time, equipment, and supervised testing needed for this first step.</span></li>
-          <li><strong>A place to test</strong><span>Connect me with a mulch or green-waste operation able to discuss supervised access.</span></li>
-          <li><strong>Practical experience</strong><span>Share how inspections work and what information would actually help a crew.</span></li>
-        </ul>
+
+          <h3>After the first test</h3>
+          <p>If the first results justify it, the next phase would test more varied conditions. That budget would come from what the first phase teaches us.</p>
+          <p>Work on other pests and a phone app would come later, with separate tests and budgets. Those budgets have not been set.</p>
+        </div>
       </div>
-    </section>
-    <section class="phases wrap" aria-labelledby="phases-heading">
-      <p class="eyebrow">One test at a time</p>
-      <h2 id="phases-heading">Let the results set the next step.</h2>
-      <ol>
-        <li><div><h3>First phase · $5,000 goal</h3><p>Improve the recorder and make supervised recordings of comparable material with and without confirmed beetle larvae.</p></div></li>
-        <li><div><h3>Next · more varied conditions</h3><p>If the first results justify it, test across a wider range of real conditions. Set that budget from what the first phase teaches us.</p></div></li>
-        <li><div><h3>Later · other hidden pests</h3><p>If the approach proves useful, explore other pests, including termites. Each would need separate testing. A budget for that work has not been set.</p></div></li>
-      </ol>
+      <p class="wrap access-note">I’m also looking for a supervised place to record and people who can explain how inspections work in practice. If you handle mulch or green waste, I’d like to hear from you.</p>
     </section>
     <section class="contact" id="contact" aria-labelledby="contact-heading">
       <div class="wrap contact-grid">
