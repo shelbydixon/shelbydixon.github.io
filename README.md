@@ -14,11 +14,7 @@ Professional portfolio for Shelby Dixon.
 - `assets/documents/Shelby_Dixon_Resume.pdf` — current one-page résumé
 - `styles.css` — shared visual design
 
-## Design direction
 
-This version intentionally uses no photographs, stock graphics, gradients,
-neon effects, or generic technology icon walls. The site relies on clear
-writing, editorial typography, and evidence.
 
 ## Publishing
 
