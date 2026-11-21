@@ -1,231 +1,245 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101318">
-  <title>TRACE-CRB | Shelby Dixon</title>
-  <meta name="description" content="Shelby Dixon’s research notebook: building a contact recorder and exploring a future bug sound library to help growers recognize hidden pest activity.">
-  <link rel="canonical" href="https://shelbydixon.github.io/trace-crb/">
-  <meta property="og:title" content="TRACE-CRB | Listening for hidden pests">
-  <meta property="og:description" content="An early recorder, the first supervised test, and a longer-term idea for helping farmers and backyard growers. Research in progress in Hawaiʻi.">
+  <meta name="description" content="Shelby Dixon builds applied AI, data-validation, automation, and edge-sensing systems grounded in field experience.">
+  <meta name="author" content="Shelby Dixon">
+  <meta name="theme-color" content="#f5f0e7">
+  <meta property="og:title" content="Shelby Dixon | Computer Engineering">
+  <meta property="og:description" content="Shelby Dixon builds applied AI, data-validation, automation, and edge-sensing systems grounded in field experience.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://shelbydixon.github.io/trace-crb/">
-  <meta property="og:image" content="https://shelbydixon.github.io/trace-crb/assets/dog-and-mulch.webp">
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <title>Shelby Dixon | Computer Engineering</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <a class="skip-link" href="#project">Skip to the project</a>
-  <header class="masthead wrap">
-    <a class="wordmark" href="#" aria-label="TRACE-CRB home">TRACE<span>-</span>CRB</a>
-    <nav aria-label="Main navigation"><a href="#project">The work</a><a href="#vision">The idea ahead</a><a href="#contact">Contact</a></nav>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html">
+        <span class="brand-name">Shelby Dixon</span>
+        <span class="brand-role">Computer Engineering · Honolulu</span>
+      </a>
+      <div class="nav-links">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="projects.html">Selected Work</a>
+        <a href="experience.html">Experience</a>
+        <a href="resume.html">Résumé</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://github.com/shelbydixon" target="_blank" rel="noreferrer">GitHub ↗</a>
+      </div>
+    </nav>
   </header>
-  <main>
-    <section class="hero wrap" aria-labelledby="headline">
-      <div class="hero-copy">
-        <p class="byline">A research project by Shelby Dixon <span>Hawaiʻi</span></p>
-        <h1 id="headline">After the alert,<br>there’s still<br>a search.</h1>
-        <p class="expansion"><strong>TRACE</strong><br>Targeted Recognition of<br>Acoustic Contact Evidence</p>
-        <p class="intro">I’m building a recorder to explore whether tiny vibrations can help us find the coconut rhinoceros beetle larvae hidden in mulch.</p>
-        <a class="text-link" href="#project">The story so far <span aria-hidden="true">↓</span></a>
-      </div>
-      <figure class="hero-image">
-        <img src="assets/dog-and-mulch.webp" width="1200" height="675" alt="Illustration of a detection dog beside a pile of mulch." fetchpriority="high">
-        <figcaption>An illustration of the question behind this project: after a dog alerts, where do you look?</figcaption>
-      </figure>
-    </section>
-    <div class="status-strip"><p class="wrap"><strong>Where I am now</strong> Early research prototype. Detection of beetle larvae has not yet been demonstrated.</p></div>
 
-    <section class="paper" id="project">
-      <div class="wrap">
-        <div class="place-story">
-          <div class="essay-copy">
-            <p class="margin-note">From Hawaiʻi <span>Niu and the places we grow</span></p>
-            <h2>What’s at stake when a palm is lost</h2>
-            <p class="standfirst">A tree takes years to become part of a place.</p>
-            <p>Niu, the coconut, is part of Hawaiʻi’s food and cultural life. The community movement <a href="https://www.puuhonua-society.org/niu-now">NiU NOW!</a> describes it as a “tree of life” and works to renew coconut groves, cultural knowledge, and food security. Protecting palms means more than preserving scenery.</p>
-          </div>
-          <figure class="palm-photo">
-            <img src="assets/crb-damage-hawaii.webp" width="1013" height="1800" alt="A coconut palm in Hawaiʻi with severely damaged fronds." loading="lazy">
-            <figcaption>Coconut palm in Hawaiʻi with severe CRB damage, June 2015.<br>Photo: <a href="https://www.flickr.com/photos/scotnelson/19875950389/">Kailee Tam, via Scot Nelson</a>. <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>.</figcaption>
-          </figure>
-        </div>
-        <div class="larva-story">
-          <figure class="larva-photo">
-            <img src="assets/crb-larvae-hdoa.webp" width="1600" height="1200" alt="Late-stage coconut rhinoceros beetle larvae laid out in a specimen display." loading="lazy">
-            <figcaption>Late-stage CRB larvae on display at HDOA in Honolulu, September 2017. This is a specimen display, not a TRACE test.<br>Photo: <a href="https://www.flickr.com/photos/starr-environmental/39499675840/">Forest &amp; Kim Starr</a>. <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a>.</figcaption>
-          </figure>
-          <div class="essay-copy">
-            <h3>The part you can’t see</h3>
-            <p>Adult beetles damage a palm’s growing crown. Their larvae feed in decaying plant material, including green-waste piles. <a class="inline-source" href="https://www.fs.usda.gov/foresthealth/docs/fidls/FIDL-191-CoconutRhinocerosBeetle.pdf#page=2">USDA Forest Service</a></p>
-            <p>A detection dog can alert a crew to a suspect pile. Finding the coconut rhinoceros beetle larvae inside can still take digging. I’m starting with a specific question: could a contact recorder help a crew narrow that search?</p>
-            <p>That means learning what the recorder picks up when larvae are present, and what it picks up when they aren’t.</p>
-          </div>
-        </div>
-      </div>
-    </section>
+  <main id="main">
 
-    <section class="bench wrap" aria-labelledby="bench-heading">
-      <header class="section-heading"><p class="margin-note">On the bench</p><h2 id="bench-heading">The recorder I’ve been working on</h2></header>
-      <div class="bench-photos">
-        <figure class="experiment-photo">
-          <a class="photo-link" href="assets/trace-bench.webp" aria-label="Open the full bench work photograph">
-            <img src="assets/trace-bench.webp" width="1152" height="1536" alt="Shelby working with the early recorder’s wiring at a laboratory bench." loading="lazy">
-          </a>
-          <figcaption>Working on the early contact-sensor setup, summer 2026. This was prototype development, not a test with larvae. <a href="assets/trace-bench.webp">Open full photograph</a>.</figcaption>
-        </figure>
-        <figure class="experiment-photo">
-          <a class="photo-link" href="assets/trace-recorder-overview.webp" aria-label="Open the full recorder overview photograph">
-            <img src="assets/trace-recorder-overview.webp" width="1260" height="1680" alt="Overview of the early recorder’s circuit board, small computer, and back of its touchscreen." loading="lazy">
-          </a>
-          <figcaption>The early recorder’s circuit, computer, and touchscreen, summer 2026. This was prototype development, not a test with larvae. <a href="assets/trace-recorder-overview.webp">Open full photograph</a>.</figcaption>
-        </figure>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Farm experience → computer engineering</p>
+      <h1>Engineering grounded in field work.</h1>
+      <p class="hero-lede">
+        I spent more than a decade in farm and field operations before moving
+        into computer engineering. Today I build data-validation tools, backend
+        workflows, and edge-sensing prototypes for practical problems in
+        agriculture, biosecurity, public systems, and infrastructure.
+      </p>
+      <p class="hero-copy">
+        My work spans Python and cloud pipelines, embedded hardware, FPGA,
+        retrieval-augmented generation, technical automation, and the less
+        glamorous work that makes a system defensible: requirements, testing,
+        provenance, and clear communication.
+      </p>
+      <div class="action-row">
+        <a class="button" href="projects.html">View selected work</a>
+        <a class="button button-outline" href="assets/documents/Shelby_Dixon_Resume.pdf" target="_blank">
+          Open résumé PDF
+        </a>
+        <a class="text-link" href="contact.html">Contact me →</a>
       </div>
-      <div class="bench-notes">
-        <div class="essay-copy">
-          <p>TRACE-CRB grew out of my farming experience and a summer 2026 engineering project at Oceanit. I began building a contact sensor and software to explore a practical question: could vibration help crews decide where to inspect first?</p>
-          <p>I’ve built an early contact recorder and software for viewing and saving its recordings.</p>
-          <p>Think of a stethoscope for vibrations. The sensor touches a surface and picks up tiny movements traveling through it. It records what happens; it doesn’t yet tell me whether a larva is there.</p>
-        </div>
-        <aside class="evidence-note">
-          <h3>What the tests show so far</h3>
-          <p>My bench tests showed a response to taps and vibration. A mark on the screen is evidence of movement, not proof of a beetle. Handling and background activity can appear in the recording too.</p>
-        </aside>
-      </div>
-    </section>
+    </div>
 
-    <section class="first-test paper" id="next">
-      <div class="wrap essay-lead">
-        <p class="margin-note">The next experiment</p>
-        <div class="essay-copy">
-          <h2>Record the same kind of material, with and without confirmed larvae.</h2>
-          <p>I want to make those recordings under supervision and in similar conditions. Then I can compare them and find out whether there is something useful to follow up.</p>
-          <p>The first job is careful recording. A disappointing result is still useful if it tells me what needs to change.</p>
-        </div>
-      </div>
-    </section>
+    <aside class="hero-aside" aria-label="Current profile">
+      <strong>Current profile</strong>
+      <ul>
+        <li>B.S. Computer Engineering candidate</li>
+        <li>University of Hawaiʻi at Mānoa</li>
+        <li>Expected graduation: December 2026</li>
+        <li>Software Engineering Intern at Oceanit</li>
+        <li>Based in Honolulu, Hawaiʻi</li>
+      </ul>
+    </aside>
+  </div>
+</section>
 
-    <section class="vision wrap" id="vision" aria-labelledby="vision-heading">
-      <p class="margin-note">Where I want this to go <span>Future research</span></p>
-      <h2 id="vision-heading">A bug sound library.<br>Eventually, a useful alert<br>on a grower’s phone.</h2>
-      <div class="vision-intro essay-copy">
-        <p>The long-term goal is to help farmers and backyard growers recognize hidden pest activity earlier. TRACE would build a library of recordings from confirmed insects, then use machine learning to recognize patterns associated with different pests.</p>
-        <p>Eventually, a sensor connected to a phone app could alert growers to suspicious activity and suggest which pest may be responsible.</p>
-      </div>
-      <div class="research-route">
-        <article>
-          <h3>First, know what made the recording.</h3>
-          <p>Start with confirmed coconut rhinoceros beetles and background samples. Later, add confirmed palm weevil and termite species, each with its own recordings and tests. Label the insect, material, and conditions so the examples mean something.</p>
-        </article>
-        <article>
-          <h3>Then, teach software what to listen for.</h3>
-          <p>Use that library to train machine-learning software, then test it on recordings it hasn’t seen. It would need to distinguish pest activity from other movement and show how often it gets things wrong.</p>
-        </article>
-        <article>
-          <h3>Only then, work toward phone alerts.</h3>
-          <p>A future app could turn those findings into an alert and a possible pest identification. That would need testing in the conditions growers actually face before anyone could rely on it.</p>
-        </article>
-      </div>
-      <p class="vision-status">A verified library covering these pests, a tested pest-identification model, and phone alerts are future goals. TRACE has not demonstrated those capabilities. The <a href="#funding">$25,000 field prototype budget</a> includes a $5,000 pilot to test the recorder in mulch.</p>
-      <aside class="separate-research" aria-labelledby="nematode-heading">
-        <h3 id="nematode-heading">A separate research question</h3>
-        <p>Also exploring root-knot nematodes. Detection method still to be established.</p>
-      </aside>
-      <p class="source-note">There is a history of research to build on. Richard Mankin’s <a href="https://www.ars.usda.gov/southeast-area/gainesville-fl/cmave/insect-behavior-and-biocontrol-research/people/richard-mankin/sound-library/">USDA ARS Bug Bytes library</a> includes insect and background recordings, including weevils and termites. It is a research reference for this project; those recordings are not presented as my own.</p>
-    </section>
+<section class="identity-bar" aria-label="Technical focus">
+  <div class="container identity-grid">
+    <div class="identity-item">
+      <strong>Applied AI</strong>
+      <span>RAG, embeddings, validation, human oversight</span>
+    </div>
+    <div class="identity-item">
+      <strong>Data and backend</strong>
+      <span>Python, SQL, FastAPI, BigQuery, Cloud Run</span>
+    </div>
+    <div class="identity-item">
+      <strong>Hardware</strong>
+      <span>Raspberry Pi, FPGA, sensors, test equipment</span>
+    </div>
+    <div class="identity-item">
+      <strong>Operating lens</strong>
+      <span>Field constraints, provenance, reliability</span>
+    </div>
+  </div>
+</section>
 
-    <section class="funding paper" id="funding" aria-labelledby="funding-heading">
-      <div class="wrap">
-        <div class="funding-layout">
-          <div class="funding-intro">
-            <p class="margin-note">Funding the field test</p>
-            <h2 id="funding-heading">What $25,000<br>would let us test</h2>
-            <p>I’m seeking $25,000 in total. The first $5,000 pays for a supervised pilot. If the recordings give us a signal worth pursuing, the remaining $20,000 would put a prototype in a field crew’s hands.</p>
-            <a class="support-link" href="mailto:sdixon4@hawaii.edu?subject=TRACE-CRB%20field%20research">Discuss funding or host a test</a>
-          </div>
-          <div class="funding-detail funding-milestones">
-            <h3>$5,000 · Can we hear a difference?</h3>
-            <p>I’d use the existing bench recorder to compare mulch containing confirmed larvae with similar mulch a host inspects for comparison. We’d log what the host actually found, flag uncertain samples, and save the audio. The pilot would deliver paired recordings and a short report on whether further testing makes sense.</p>
-            <h3>$20,000 more · Can a crew repeat it?</h3>
-            <p>I’d build two portable recorders, give a crew a repeatable setup, and check how the signal changes with the operator, mulch, or background noise. I’d set aside entire visits for a separate check and report when the signal disappears or ordinary activity looks like a hit.</p>
-            <p>Researchers recorded CRB activity in palms and logs on Guam. Whether this recorder can pick it up reliably in Hawaiʻi mulch is the question these visits would answer. <a href="https://www.ars.usda.gov/research/publications/publication/?seqNo115=241092">Read the Guam study</a>.</p>
-          </div>
-        </div>
-
-        <div class="field-budget">
-          <h3>Where the money goes</h3>
-          <p class="field-budget-intro">Four proposed pilot visits, followed by ten additional visits on Oʻahu. Most of the budget pays for the people who build and check the recorder, document what’s in the mulch, and review the audio.</p>
-          <table class="budget phase-costs">
-            <caption>Proposed direct costs in US dollars</caption>
-            <thead><tr><th scope="col">Cost and basis</th><th scope="col">Pilot</th><th scope="col">After pilot</th></tr></thead>
-            <tbody>
-              <tr><th scope="row">Engineering and analysis <small>80 pilot hours and 320 additional hours at $45/hour.</small></th><td>$3,600</td><td>$14,400</td></tr>
-              <tr><th scope="row">Field technician <small>16 and 120 hours at $25/hour for confirming samples, labeling and field notes.</small></th><td>$400</td><td>$3,000</td></tr>
-              <tr><th scope="row">Electronics, probe and assembly materials <small>One pilot reference purchase and two additional recorders. Shared parts packs carry into the second phase.</small></th><td>$262.21</td><td>$466.04</td></tr>
-              <tr><th scope="row">Local mileage <small>4 round trips × 50 miles, then 10 trips × 60 miles, at $0.76/mile.</small></th><td>$152</td><td>$456</td></tr>
-              <tr><th scope="row">Field supplies <small>4 visits and 10 additional visits at $30 per visit for labels, sample containers and cleaning supplies.</small></th><td>$120</td><td>$300</td></tr>
-              <tr><th scope="row">Shipping and tax allowance <small>$50 for the pilot, $100 for the two additional sets. Confirm at checkout.</small></th><td>$50</td><td>$100</td></tr>
-              <tr><th scope="row">Reserve <small>For repeat visits, failed components, or price changes, as needed.</small></th><td>$415.79</td><td>$1,277.96</td></tr>
-            </tbody>
-            <tfoot><tr><th scope="row">Phase total</th><td>$5,000</td><td>$20,000</td></tr></tfoot>
-          </table>
-          <p class="funding-total">Total funding request <strong>$25,000</strong></p>
-
-          <details class="budget-disclosure" id="recorder-bom" open>
-            <summary>Recorder bill of materials <span>$262.21 pilot purchase</span></summary>
-            <p>I priced the items below for one pilot reference set and two additional portable recorders. The first purchase includes full packs of small parts. A zero in the last column means there should be enough left for the later builds.</p>
-            <table class="budget parts-costs bom-parts">
-              <caption>US supplier listings checked November 20, 2026. Quantities are purchase units.</caption>
-              <thead><tr><th scope="col">Part and supplier</th><th scope="col">Pack price</th><th scope="col">Pilot qty.</th><th scope="col">Later qty.</th></tr></thead>
-              <tbody>
-                <tr><th scope="row">Raspberry Pi 4B starter kit, 2 GB<small>1 kit · <a href="https://www.pishop.us/product/raspberry-pi-4b-starter-kit-pro/">PiShop K2B-1315-2-2GB</a></small></th><td>$134.45</td><td>1</td><td>2</td></tr>
-                <tr><th scope="row">Nano 10,000 mAh USB-C power bank<small>1 power bank · <a href="https://www.anker.com/products/a1259-built-in-cable-power-bank-10000mah">Anker A1259</a></small></th><td>$49.99</td><td>1</td><td>2</td></tr>
-                <tr><th scope="row">Protective electronics enclosure<small>1 enclosure · <a href="https://www.adafruit.com/product/905">Adafruit 905</a></small></th><td>$19.95</td><td>1</td><td>2</td></tr>
-                <tr><th scope="row">USB audio adapter with mic input<small>1 adapter · <a href="https://www.adafruit.com/product/1475">Adafruit 1475</a></small></th><td>$4.95</td><td>1</td><td>2</td></tr>
-                <tr><th scope="row">Dual op amp, SOIC-8<small>1 chip, cut tape · <a href="https://www.digikey.com/en/products/detail/analog-devices-inc/AD8602ARZ-REEL7/995987">DigiKey AD8602ARZ-REEL7CT-ND</a></small></th><td>$3.00</td><td>1</td><td>2</td></tr>
-                <tr><th scope="row">Wired piezo contact element<small>1 element · <a href="https://www.adafruit.com/product/1739">Adafruit 1739</a></small></th><td>$0.95</td><td>1</td><td>2</td></tr>
-                <tr><th scope="row">Stainless steel probe stock<small>1 rod, 3/16 in × 12 in · <a href="https://ksmetals.com/products/ssr-3-16">K&amp;S 87137</a></small></th><td>$6.99</td><td>1</td><td>2</td></tr>
-                <tr><th scope="row">Shielded audio cable and 3.5 mm plug<small>1 cable, 1.83 m · <a href="https://www.tensility.com/products/053-0281r">Tensility 053-0281R</a></small></th><td>$3.34</td><td>1</td><td>2</td></tr>
-                <tr><th scope="row">PG-7 cable gland<small>1 fitting · <a href="https://www.adafruit.com/product/762">Adafruit 762</a></small></th><td>$1.95</td><td>1</td><td>2</td></tr>
-                <tr><th scope="row">Half-size Perma-Proto board<small>1 board · <a href="https://www.adafruit.com/product/1609">Adafruit 1609</a></small></th><td>$4.50</td><td>1</td><td>2</td></tr>
-                <tr><th scope="row">PCB mounting clips and screws<small>1 kit of 4 · <a href="https://www.adafruit.com/product/1116">Adafruit 1116</a></small></th><td>$2.95</td><td>1</td><td>2</td></tr>
-                <tr><th scope="row">SOIC-8 to DIP adapter boards<small>6 boards · <a href="https://www.adafruit.com/product/1212">Adafruit 1212</a></small></th><td>$2.95</td><td>1</td><td>0</td></tr>
-                <tr><th scope="row">Breakaway 0.1-inch male headers<small>10 strips of 36 pins · <a href="https://www.adafruit.com/product/392">Adafruit 392</a></small></th><td>$4.95</td><td>1</td><td>0</td></tr>
-                <tr><th scope="row">10 kΩ through-hole resistors<small>25 resistors · <a href="https://www.adafruit.com/product/2784">Adafruit 2784</a></small></th><td>$0.75</td><td>1</td><td>0</td></tr>
-                <tr><th scope="row">1 kΩ through-hole resistors<small>25 resistors · <a href="https://www.adafruit.com/product/4294">Adafruit 4294</a></small></th><td>$0.75</td><td>1</td><td>0</td></tr>
-                <tr><th scope="row">100 nF ceramic capacitors<small>10 capacitors · <a href="https://www.adafruit.com/product/753">Adafruit 753</a></small></th><td>$1.95</td><td>1</td><td>0</td></tr>
-                <tr><th scope="row">10 µF electrolytic capacitors<small>10 capacitors · <a href="https://www.adafruit.com/product/2195">Adafruit 2195</a></small></th><td>$1.95</td><td>1</td><td>0</td></tr>
-                <tr><th scope="row">22 AWG hookup wire<small>1 spool, 25 ft · <a href="https://www.adafruit.com/product/288">Adafruit 288</a></small></th><td>$2.95</td><td>1</td><td>0</td></tr>
-                <tr><th scope="row">Heat-shrink tubing<small>1 assorted pack · <a href="https://www.adafruit.com/product/1649">Adafruit 1649</a></small></th><td>$4.95</td><td>1</td><td>0</td></tr>
-                <tr><th scope="row">ClearWeld epoxy<small>1 syringe, 25 mL · <a href="https://www.jbweld.com/product/clearweld-syringe">J-B Weld 50112</a></small></th><td>$7.99</td><td>1</td><td>0</td></tr>
-              </tbody>
-            </table>
-            <p><strong>Parts purchases:</strong> $262.21 for the pilot and $466.04 for both additional builds, or $728.25 across the full project. Shipping and tax appear separately in the phase budget.</p>
-            <p>The Pi kit includes storage and wall power. I’d use an existing laptop for the display and existing bench tools and solder for assembly. These are candidate parts. I still need to check how the probe couples to the sensor, how long the battery lasts, and how the field enclosure performs.</p>
-          </details>
-          <details class="budget-disclosure">
-            <summary>How I estimated the time and rates</summary>
-            <p><strong>Engineering.</strong> The pilot allows 24 hours for recorder checks, 24 for supervised recording, and 32 for reviewing audio and writing up results. The next phase allows 80 hours for field-ready builds, 80 for fieldwork, 120 for audio review and comparisons, and 40 for crew instructions and findings.</p>
-            <p><strong>Field support.</strong> The pilot allows four technician hours per visit. The next phase allows eight on site and four for checking labels and reconciling field notes per visit. Hawaiʻi’s 2025 wage survey reports Honolulu mean hourly wages of $45.82 for electronics engineering technicians and $24.41 for agricultural technicians. These anchor the proposed $45 and $25 hourly rates. <a href="https://files.hawaii.gov/dbedt/economic/data_reports/DLIR/OEWS-2025-Publication.pdf#page=29">State wage survey, Table 6</a>.</p>
-            <p><strong>Travel and access.</strong> Mileage uses the second-half 2026 business rate as a benchmark. Visit counts, distances, supplies, and shipping are planning allowances. The estimate assumes a host can provide supervised site access in kind. Site fees or institutional overhead would require a revised budget. <a href="https://www.irs.gov/tax-professionals/standard-mileage-rates">IRS mileage rates</a>.</p>
-          </details>
-          <p class="budget-scope">These are funding targets. Host sites and funding are still being sought. A grower phone app and work on other pests would require separate funding.</p>
-        </div>
+<section class="section section-light">
+  <div class="container">
+    <div class="section-heading">
+      <div>
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects that show the direction of my engineering.</h2>
       </div>
-    </section>
-    <section class="contact" id="contact" aria-labelledby="contact-heading">
-      <div class="wrap contact-grid">
-        <div><p class="eyebrow">Let’s talk</p><h2 id="contact-heading">Help plan<br>the next test.</h2></div>
-        <div class="contact-details">
-          <p class="name">Shelby Dixon</p>
-          <a class="email" href="mailto:sdixon4@hawaii.edu?subject=TRACE-CRB">sdixon4@hawaii.edu</a>
-          <a class="phone" href="tel:+18083675598">808-367-5598</a>
-          <a class="download" href="shelby-dixon.vcf" download>Save my contact <span aria-hidden="true">↓</span></a>
+      <p>
+        This is a curated portfolio, not a dump of every repository. These
+        projects best show how I work across hardware, software, data, and
+        real operational constraints.
+      </p>
+    </div>
+
+    <div class="project-list">
+      <article class="project-row">
+        <div class="project-number">01</div>
+        <div>
+          <h3>PUALEI</h3>
+          <p>
+            Low-power plant-health monitoring for space and resilient
+            agriculture using plant-stress sensing, capillary-wick water
+            delivery, and onboard inference.
+          </p>
+          <a class="text-link" href="projects.html#pualei">Read the project overview →</a>
         </div>
-      </div>
-    </section>
+        <dl class="project-meta">
+          <dt>Role</dt>
+          <dd>Project originator and computer-engineering lead</dd>
+          <dt>Stage</dt>
+          <dd>Ground prototype development</dd>
+        </dl>
+      </article>
+
+      <article class="project-row">
+        <div class="project-number">02</div>
+        <div>
+          <h3>TRACE-CRB</h3>
+          <p>
+            A contact-acoustic field-triage prototype intended to help an
+            inspector decide where closer coconut rhinoceros beetle inspection
+            may be warranted.
+          </p>
+          <a class="text-link" href="projects.html#trace-crb">Read the project overview →</a>
+        </div>
+        <dl class="project-meta">
+          <dt>Role</dt>
+          <dd>Prototype integration, Pi/FPGA pipeline, discovery</dd>
+          <dt>Focus</dt>
+          <dd>Edge sensing and field-facing decision support</dd>
+        </dl>
+      </article>
+
+      <article class="project-row">
+        <div class="project-number">03</div>
+        <div>
+          <h3>VENOM-RAG</h3>
+          <p>
+            A cybersecurity-focused AI demonstration showing how poisoned PDFs
+            and hidden text can influence retrieval and model responses.
+          </p>
+          <a class="text-link" href="projects.html#venom-rag">Read the project overview →</a>
+        </div>
+        <dl class="project-meta">
+          <dt>Role</dt>
+          <dd>Research contributor and reproducibility work</dd>
+          <dt>Tools</dt>
+          <dd>Python, Jupyter, FAISS, embeddings</dd>
+        </dl>
+      </article>
+
+      <article class="project-row">
+        <div class="project-number">04</div>
+        <div>
+          <h3>GRO Control Room</h3>
+          <p>
+            A University of Hawaiʻi Government Relations legislative intelligence
+            platform for monitoring hearings, bills, testimony,
+            votes, and changes relevant to the university.
+          </p>
+          <a class="text-link" href="projects.html#gro-control-room">Read the project overview →</a>
+        </div>
+        <dl class="project-meta">
+          <dt>Role</dt>
+          <dd>Business and technical lead</dd>
+          <dt>Stack</dt>
+          <dd>Python, BigQuery, Apify, FastAPI, Cloud Run</dd>
+        </dl>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container split">
+    <div class="split-title">
+      <p class="eyebrow">Why the background matters</p>
+      <h2>Ten years of field operations changed how I see systems.</h2>
+    </div>
+    <div class="split-copy">
+      <p>
+        Greenhouses, hydroponics, soil production, maintenance, supplies, and
+        partner coordination taught me that a system is not successful because
+        the diagram looks clean. It succeeds when the workflow remains usable,
+        the failure modes are understood, and the evidence is good enough to
+        make the next decision.
+      </p>
+      <p>
+        That is the perspective I bring to AI pipelines, embedded prototypes,
+        and research. I care about source verification, clear limits, human
+        review, and systems that survive contact with the real environment.
+      </p>
+      <a class="text-link" href="experience.html">See my experience →</a>
+    </div>
+  </div>
+</section>
+
+<section class="section section-blue">
+  <div class="container callout">
+    <div>
+      <p class="eyebrow">Publication</p>
+      <h2>Adrian: A Privacy-First Embodied AI Platform</h2>
+      <p>
+        Published in <em>Mānoa Horizons</em>, Volume X. The work examines an
+        embodied AI concept shaped by privacy and ethical design constraints.
+      </p>
+    </div>
+    <a class="button" href="https://hdl.handle.net/10125/112621" target="_blank" rel="noreferrer">
+      Read the publication
+    </a>
+  </div>
+</section>
+
   </main>
-  <footer class="wrap footer"><span>TRACE: Targeted Recognition of Acoustic Contact Evidence<br>CRB: coconut rhinoceros beetle · Research in progress</span><a href="https://shelbydixon.github.io/">Shelby’s portfolio</a></footer>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p><strong>Shelby Dixon</strong><br>Computer Engineering · Honolulu, Hawaiʻi</p>
+      <div class="footer-links">
+        <a href="mailto:sdixon4@hawaii.edu">Email</a>
+        <a href="https://www.linkedin.com/in/shelby-dixon-531096308/" target="_blank" rel="noreferrer">LinkedIn</a>
+        <a href="https://github.com/shelbydixon" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="assets/documents/Shelby_Dixon_Resume.pdf" target="_blank">Résumé PDF</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

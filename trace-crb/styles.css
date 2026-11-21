@@ -16,3 +16,38 @@
 @media(max-width:700px){.bench-photos{grid-template-columns:1fr;gap:31px;margin-bottom:33px}}
 
 .separate-research{margin:30px 0 26px 33.3%;padding-top:22px;border-top:1px solid #3b4350}.separate-research h3{font-size:18px;margin-bottom:8px}.separate-research p{font-size:15px;color:#c3cad5}.bench-photos .photo-link:focus-visible{outline-color:#b6c4ff}@media(max-width:700px){.separate-research{margin-left:0}.bench-photos img{max-height:65vh}}
+
+/* The field budget uses the same paper, ink, and blue as the research page. */
+.funding-milestones h3 + p { margin-bottom: 1.35rem; }
+.funding-milestones a, .field-budget a { color: #1745b8; text-underline-offset: .16em; }
+.field-budget { max-width: 54rem; margin: 3.5rem auto 0; }
+.field-budget h3 { font-size: clamp(1.65rem, 4vw, 2.45rem); margin: 0 0 .6rem; }
+.field-budget-intro, .budget-disclosure p, .budget-scope { font-size: 1rem; line-height: 1.6; }
+.field-budget-intro { max-width: 48rem; margin: 0 0 1.5rem; }
+.field-budget .budget { font-variant-numeric: tabular-nums; font-size: 1rem; }
+.field-budget .budget caption, .field-budget .budget thead { font-size: .875rem; }
+.phase-costs thead th:not(:first-child), .parts-costs thead th:last-child { text-align: right; }
+.phase-costs th:first-child { width: 66%; }
+.phase-costs td, .phase-costs thead th:not(:first-child) { padding-left: .65rem; }
+.phase-costs tbody th { font-weight: 700; }
+.phase-costs small { display: block; margin-top: .22rem; color: #475466; font-size: .875rem; font-weight: 400; line-height: 1.45; }
+.funding-total { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; margin: 0 0 1.1rem; color: #122a64; font-weight: 700; }
+.funding-total strong { font-size: 1.6rem; }
+.budget-disclosure { border-top: 1px solid #aeb8c5; }
+.budget-disclosure:last-of-type { border-bottom: 1px solid #aeb8c5; }
+.budget-disclosure summary { padding: 1.05rem 0; cursor: pointer; font-size: 1.125rem; font-weight: 700; line-height: 1.4; }
+.budget-disclosure summary span { color: #405175; font-size: .875rem; white-space: nowrap; margin-left: .4rem; }
+.budget-disclosure p { margin: .15rem 0 1.05rem; }
+.parts-costs tbody a { font-size: .875rem; display: inline-block; margin-left: .25rem; }
+.budget-scope { color: #475466; margin-top: 1rem; }
+@media (max-width: 540px) {
+  .field-budget { margin-top: 2.2rem; }
+  .field-budget .budget { font-size: .875rem; }
+  .phase-costs th:first-child { width: auto; }
+  .phase-costs tbody th { padding-right: .2rem; }
+  .phase-costs td, .phase-costs thead th:not(:first-child) { padding-left: .4rem; }
+  .budget-disclosure summary span { display: block; margin-left: 1rem; }
+}
+.bom-parts tbody th small { display:block; margin-top:.2rem; font-size:.875rem; line-height:1.45; color:#475466; }
+.bom-parts th:not(:first-child), .bom-parts td { text-align:right; padding-left:.55rem; }
+.bom-parts tbody a { margin-left:0; overflow-wrap:anywhere; }
